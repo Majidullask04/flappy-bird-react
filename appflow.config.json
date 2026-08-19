@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "appId": "1a190229",
+      "androidPath": "android",
+      "dependencyInstallCommand": "npm install",
+      "webBuildCommand": "npm run build"
+    }
+  ]
+}
