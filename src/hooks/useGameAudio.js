@@ -205,17 +205,7 @@ export function useGameAudio() {
       volume: 0.08,
     });
   }, [playTone]);
-
-  const playCoin = useCallback(() => {
-    // Bright sparkling coin chime
-    playTone({
-      freqStart: 987.77, // B5
-      freqEnd: 1318.51, // E6
-      duration: 0.12,
-      type: "sine",
-      volume: 0.09,
-    });
-  }, [playTone]);
+  
 
   const toggleMute = useCallback(() => {
     setMuted((prev) => {
@@ -230,7 +220,6 @@ export function useGameAudio() {
     toggleMute,
     playFlap,
     playScore,
-    playCoin,
     playHit,
     playDie,
     playGameOver,

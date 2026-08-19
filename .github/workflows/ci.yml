@@ -52,7 +52,14 @@ jobs:
 
       - name: Trivy filesystem scan
         run: |
-          trivy fs --format table -o fs-report.txt .
+          trivy fs --exit-code 1 --severity HIGH,CRITICAL --format table -o fs-report.txt .
+
+      - name: Upload Trivy report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trivy-report
+          path: fs-report.txt
 
       - name: Install Gitleaks
         run: |
@@ -65,6 +72,13 @@ jobs:
             --source . \
             --report-format json \
             --report-path gitleaks-report.json
+
+      - name: Upload Gitleaks report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gitleaks-report
+          path: gitleaks-report.json
 
 
   sonar-scan:
