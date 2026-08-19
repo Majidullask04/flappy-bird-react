@@ -1,4 +1,4 @@
-package com.example.app;
+package com.majidullask.flappybird;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -4,7 +4,7 @@
       "appId": "1a190229",
       "androidPath": "android",
       "dependencyInstallCommand": "npm install",
-      "webBuildCommand": "npm run build && npx cap sync android"
+      "webBuildCommand": "npm run build"
     }
   ]
 }
