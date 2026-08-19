@@ -1,0 +1,16 @@
+node_modules/
+dist/
+
+# Capacitor / Android
+android/capacitor-cordova-android-plugins/
+android/.gradle/
+android/build/
+
+# Environment
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+*.swp

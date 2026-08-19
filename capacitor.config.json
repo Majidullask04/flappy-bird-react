@@ -1,6 +1,5 @@
 {
   "appId": "com.majidullask.flappybird",
   "appName": "Flappy Bird",
-  "webDir": "dist",
-  "bundledWebRuntime": false
+  "webDir": "dist"
 }
